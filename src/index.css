@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
+
+
+@keyframes mymove {
+  from {
+    transform: translateY(100%); /* เริ่มจากตำแหน่งล่างสุด */
+    opacity: 0; /* มองไม่เห็นเลย */
+  }
+  to {
+    transform: translateY(0); /* ขยับกลับมาตำแหน่งปกติ (ไม่มีการเลื่อน) */
+    opacity: 1; /* ปรากฏตัวเต็ม */
+  }
+}
+
+@keyframes top {
+  from {
+    transform: translateY(-100%); /* เริ่มจากตำแหน่งบนสุด */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* เริ่มจากตำแหน่งบนสุด */
+    opacity: 1;
+  }
+}
+
+@keyframes rightTOleft {
+  from {
+    transform: translateX(100%); /*เลื่อนจากขวาไปซ้าย*/
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes leftTOright {
+  from {
+    transform: translateX(-100%); /*เลื่อนจากขวาไปซ้าย*/
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* เริ่มจากด้านล่าง */
+  }
+  to {
+    opacity : 1;
+    transform : translateY(0); /* กลับสู่ตำแหน่งปกติ */
+  }
+}
+
+@layer utilities {
+  .animation-mymove {
+    animation: mymove 2s forwards;
+  }
+  .animation-top {
+    animation: top 2s forwards;
+  }
+  .animation-rightTOleft {
+    animation : rightTOleft 3s forwards;
+  }
+  .animation-leftTOright {
+    animation : leftTOright 3s forwards;
+  }
+}
+
+
+
