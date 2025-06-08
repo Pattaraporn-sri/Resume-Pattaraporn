@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import github from "../src/IMG/icons8-github-30.png";
-import facrbook from "../src/IMG/icons8-facebook-30.png"
-import ig from "../src/IMG/icons8-ig-30.png"
+import facrbook from "../src/IMG/icons8-facebook-30.png";
+import ig from "../src/IMG/icons8-ig-30.png";
 
 function Home() {
   return (
@@ -24,10 +24,18 @@ function Home() {
             <img src={github} className="h-9 mt-3" />
           </Link>
           <Link to="https://www.facebook.com/pattaraporn.sritirat.2024">
-            <img src={facrbook} className="h-9 mt-3 ml-2"/>
+            <img src={facrbook} className="h-9 mt-3 ml-2" />
           </Link>
           <Link to="https://www.instagram.com/_yypatt/">
-            <img src={ig} className="h-9 mt-3 ml-2"/>
+            <img src={ig} className="h-9 mt-3 ml-2" />
+          </Link>
+        </div>
+
+        <div>
+          <Link to="about">
+            <button className="bg-white text-black font-bold w-20 h-8 rounded-xl mt-3 text-sm">
+              Explore
+            </button>
           </Link>
         </div>
       </div>

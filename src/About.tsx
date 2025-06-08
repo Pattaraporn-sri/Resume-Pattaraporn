@@ -43,7 +43,7 @@ const About: React.FC = () => {
   return (
     <div className="flex h-full bg-slate-950 text-slate-200 font-Cascadia">
       {/* side bar */}
-      <div className="w-56 h-[662px] ml-10 flex-col">
+      <div className="w-56 h-[662px] ml-10 flex-col fixed">
         <p className="text-4xl font-bold mt-5">About me</p>
         <button
           onClick={() => handleScroll(scroll1Ref)}
@@ -74,12 +74,12 @@ const About: React.FC = () => {
       </div>
 
       {/* content */}
-      <div className="ml-10">
+      <div className="ml-64">
         <li ref={scroll1Ref} className="text-2xl font-bold">
           Introduction
         </li>
         <hr className="rotate-90 w-[430px] mt-56 absolute -ml-[212px]"></hr>
-        <div className="flex ml-8 animation-rightTOleft">
+        <div className="flex ml-8 animation-rightTOleft ">
           <img src={yy} className="h-56 mt-5" />
           <p className=" w-[800px] flex justify-center items-center ml-10">
             ดิฉันนางสาวภัทราพร ศรีธิราช ชื่อเล่น ยาหยี
@@ -142,11 +142,11 @@ const About: React.FC = () => {
 
         {/* Personality */}
         <hr className="rotate-90 w-[150px] absolute mt-[150px] -ml-[72px]"></hr>
-        <div className="font-Cascadia mt-10">
+        <div className="font-Cascadia mt-10 animation-rightTOleft [animation-delay:2  s">
           <li ref={scroll2Ref} className="text-2xl mb-3 font-bold">
             Personality
           </li>
-          <div className="ml-8 animation-rightTOleft">
+          <div className="ml-8">
             <li>มีความรับผิดชอบและสามารถทำงานภายใต้ความกดดันได้ดี</li>
             <li>
               มีทักษะในการแก้ไขปัญหาเชิงเทคนิค

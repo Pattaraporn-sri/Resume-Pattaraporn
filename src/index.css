@@ -62,16 +62,17 @@
 
 @layer utilities {
   .animation-mymove {
-    animation: mymove 2s forwards;
-  }
+    animation: mymove 5s ease ;
+    animation-delay: 0.5s;
+  } 
   .animation-top {
-    animation: top 2s forwards;
+    animation: top 2s ;
   }
   .animation-rightTOleft {
-    animation : rightTOleft 3s forwards;
-  }
+    animation : rightTOleft 5s ease ;
+  } 
   .animation-leftTOright {
-    animation : leftTOright 3s forwards;
+    animation : leftTOright 3s ;
   }
 }
 
